@@ -6,25 +6,37 @@
 </head>
 
 <body>
-    <div class="container">
-        <div id="header" class="box">
-            <h1 id="site-name-header">beautifully uneven</h1>
-            <nav id="header-nav">
-                <ul>
-                    <li><a href="index.html">◦ home ◦</a></li>
-                    <li><a href="index.html">◦ about ◦</a></li>
-                    <li><a href="index.html">◦ photos ◦</a></li>
-                </ul>
-            </nav>
-        </div>
+    <div class="wrapper">
+        <div class="container">
+            <div id="header" class="box">
+                <h1 id="site-name-header">beautifully uneven</h1>
+                <nav id="header-nav">
+                    <ul>
+                        <li><a href="index_DEV01.html">◦ home ◦</a></li>
+                        <li><a href="index_DEV01.html">◦ about ◦</a></li>
+                        <li><a href="index_DEV01.html">◦ photos ◦</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-        <div class="box">
-            <img class="graphic" alt="Under Construction" name="teppy-under-construction" src="https://teppyslayouts.neocities.org/img/graphics/teppy-under-construction.png">
-            <h3><strong>This website is currently under construction.</strong></h3>
-            <img src="https://pixelsafari.neocities.org/favicon/horror/skull6.gif" class="icon">
-            <p>New, freshly coded things are in store including photos, blog posts, videos, and all kinds of personal internet shenanigans!</p>
-            <p>Thanks for stopping by anyways :)</p><br>
-            <img src="https://pixelsafari.neocities.org/dividers/rainbowhearts5.gif" class="center"><br>
+            <div class="box">
+                <h1>Photos</h1>
+                <p>[Under Construction]</p>
+            </div>
+
+            <div class="box">
+                <div class="gallery-row">
+                    <div class="gallery-column">
+                      <img src="images/zodiac 172.gif" alt="Gemini" style="width:100%">
+                    </div>
+                    <div class="gallery-column">
+                      <img src="images/kao24.gif" alt="Forest" style="width:100%">
+                    </div>
+                    <div class="gallery-column">
+                      <img src="images/heart-lgbt.png" alt="Mountains" style="width:20%">
+                    </div>
+                  </div> 
+            </div>
         </div>
     </div>
 
@@ -69,11 +81,16 @@
             text-decoration:underline;
         }
 
-        .gallery img {
-            height: 100%;
-            width: 100%;
-            object-fit: contain;
-            margin: 20px auto;
+        .gallery-column {
+            float:left;
+            width: 20%;
+            padding: 5px;
+        }
+
+        .gallery-row::after {
+            content: "";
+            clear: both;
+            display: table;
         }
 
         ul, li{
